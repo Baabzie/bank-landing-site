@@ -1,0 +1,9 @@
+@import "@/styles/colors.scss";
+
+.footer {
+  background-color: $dark-blue;
+  padding: 24px 0;
+  img {
+    filter: invert(47%) sepia(100%) saturate(1500%) hue-rotate(110deg);
+  }
+}
