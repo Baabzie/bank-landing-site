@@ -17,6 +17,13 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className={styles["first-row-right"]}>
+          <div className={styles["background-div"]}>
+            <img
+              className={styles["background-img"]}
+              src="/images/bg-intro-desktop.svg"
+              alt="Background image"
+            />
+          </div>
           <img
             src="/images/image-mockups.png"
             alt="Four phones showing the Easybank app in use."
