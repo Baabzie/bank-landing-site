@@ -1,2 +1,28 @@
-$modile: 375px;
+$mobile: 375px;
+$bigTablet: 1060px;
+$smallDesktop: 1200px;
 $desktop: 1440px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin bigTablet {
+  @media (max-width: $bigTablet) {
+    @content;
+  }
+}
+
+@mixin smallDesktop {
+  @media (max-width: $smallDesktop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
