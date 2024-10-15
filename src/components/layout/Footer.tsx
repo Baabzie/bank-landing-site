@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles["footer"]}>
       <div className={styles["logo-icon-div"]}>
-        <img src="/images/logo.svg" alt="Easybanks logo" />
+        {/* <img src="/images/logo.svg" alt="Easybanks logo" /> */}
         <div className={styles["icon-div"]}>
           <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
           <img src="/images/icon-youtube.svg" alt="Youtube Icon" />

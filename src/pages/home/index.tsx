@@ -93,7 +93,7 @@ const Home: React.FC = () => {
           <div>
             <img src="/images/image-currency.jpg" alt="A picture of money." />
             <div className={styles["article-text-div"]}>
-              <p>By Claire Robinson</p>
+              <p className={styles["author-text"]}>By Claire Robinson</p>
               <h3>Receive money in any currency with no fees</h3>
               <p>
                 The world is getting smaller and we’re becoming more mobile. So
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
               alt="A picture of a table with food."
             />
             <div className={styles["article-text-div"]}>
-              <p>By Wilson Hutton</p>
+              <p className={styles["author-text"]}>By Wilson Hutton</p>
               <h3>Treat yourself without worrying about money</h3>
               <p>
                 Our simple budgeting feature allows you to separate out your
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
               alt="A picture of an airplane wing."
             />
             <div className={styles["article-text-div"]}>
-              <p>By Wilson Hutton</p>
+              <p className={styles["author-text"]}>By Wilson Hutton</p>
               <h3>Take your Easybank card wherever you go</h3>
               <p>
                 We want you to enjoy your travels. This is why we don’t charge
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
               alt="A picture of confetti flying in the air."
             />
             <div className={styles["article-text-div"]}>
-              <p>By Claire Robinson</p>
+              <p className={styles["author-text"]}>By Claire Robinson</p>
               <h3>Our invite-only Beta accounts are now live!</h3>
               <p>
                 After a lot of hard work by the whole team, we’re excited to
