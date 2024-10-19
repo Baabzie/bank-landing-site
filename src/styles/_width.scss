@@ -1,10 +1,17 @@
 $mobile: 375px;
+$tablet: 750px;
 $bigTablet: 1060px;
 $smallDesktop: 1200px;
 $desktop: 1440px;
 
 @mixin mobile {
   @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }
