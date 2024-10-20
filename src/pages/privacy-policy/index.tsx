@@ -1,4 +1,4 @@
-const Careers: React.FC = () => {
+const PrivacyPolicy: React.FC = () => {
   return (
     <>
       <p className="portfolio-explanation">
@@ -9,4 +9,4 @@ const Careers: React.FC = () => {
   );
 };
 
-export default Careers;
+export default PrivacyPolicy;

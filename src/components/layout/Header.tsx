@@ -1,5 +1,7 @@
 import styles from "./Header.module.scss";
 
+import Link from "next/link";
+
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 import RequestInviteButton from "../requestInviteButton/RequestInviteButton";
@@ -7,7 +9,9 @@ import RequestInviteButton from "../requestInviteButton/RequestInviteButton";
 const Header: React.FC = () => {
   return (
     <header className={styles["header"]}>
-      <img src="/images/logo.svg" alt="Easybanks logo" />
+      <Link href={`/home`}>
+        <img src="/images/logo.svg" alt="Easybanks logo" />
+      </Link>
       <div className={styles["display-desktop-div"]}>
         <Navigation />
       </div>
