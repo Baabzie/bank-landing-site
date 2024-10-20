@@ -1,12 +1,13 @@
 @import "@/styles/width.scss";
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;
   //   height: 3rem;
-  z-index: 3;
+  z-index: 15;
   @include tablet {
     justify-content: space-between;
     padding: 0 24px;

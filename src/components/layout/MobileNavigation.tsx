@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./MobileNavigation.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const MobileNavigation: React.FC = () => {
   const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
@@ -14,6 +14,23 @@ const MobileNavigation: React.FC = () => {
   const openCloseNavigation = () => {
     setNavigationOpen((prevState) => !prevState);
   };
+
+  // To disable scroll on page while hamburger menu is opened
+
+  useEffect(() => {
+    if (navigationOpen) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
+  }, [navigationOpen]);
 
   return (
     <>
@@ -30,22 +47,30 @@ const MobileNavigation: React.FC = () => {
         )}
       </button>
       {navigationOpen && (
-        <nav className={styles["nav"]}>
-          <ul>
-            {pagesArray.map((page) => (
-              <li key={page}>
-                <Link
-                  onClick={() => {
-                    openCloseNavigation();
-                  }}
-                  href={`/${page}`}
-                >
-                  {capitalizeFirstLetter(page)}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <>
+          <div
+            onClick={() => {
+              openCloseNavigation();
+            }}
+            className={styles["dark-background"]}
+          />
+          <nav className={styles["nav"]}>
+            <ul>
+              {pagesArray.map((page) => (
+                <li key={page}>
+                  <Link
+                    onClick={() => {
+                      openCloseNavigation();
+                    }}
+                    href={`/${page}`}
+                  >
+                    {capitalizeFirstLetter(page)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </>
       )}
     </>
   );
