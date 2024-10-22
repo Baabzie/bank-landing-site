@@ -24,11 +24,11 @@ const Footer: React.FC = () => {
       <div className={styles["logo-icon-div"]}>
         {/* <img src="/images/logo.svg" alt="Easybanks logo" /> */}
         <div className={styles["icon-div"]}>
-          <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
-          <img src="/images/icon-youtube.svg" alt="Youtube Icon" />
-          <img src="/images/icon-twitter.svg" alt="Twitter Icon" />
-          <img src="/images/icon-pinterest.svg" alt="Pinterest Icon" />
-          <img src="/images/icon-instagram.svg" alt="Instagram Icon" />
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon" />
+          <img src="./images/icon-youtube.svg" alt="Youtube Icon" />
+          <img src="./images/icon-twitter.svg" alt="Twitter Icon" />
+          <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" />
+          <img src="./images/icon-instagram.svg" alt="Instagram Icon" />
         </div>
       </div>
       <nav>

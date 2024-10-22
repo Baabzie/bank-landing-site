@@ -43,7 +43,10 @@ const Home: React.FC = () => {
 
         <div className={styles["second-row-lower"]}>
           <div>
-            <img src="/images/icon-online.svg" alt="Icon for online banking." />
+            <img
+              src="./images/icon-online.svg"
+              alt="Icon for online banking."
+            />
             <h3>Online Banking</h3>
             <p>
               Our modern web and mobile applications allow you to keep track of
@@ -52,7 +55,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <img
-              src="/images/icon-budgeting.svg"
+              src="./images/icon-budgeting.svg"
               alt="Icon for simple budgeting."
             />
             <h3>Simple Budgeting</h3>
@@ -63,7 +66,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <img
-              src="/images/icon-onboarding.svg"
+              src="./images/icon-onboarding.svg"
               alt="Icon for fast onboarding."
             />
             <h3>Fast Onboarding</h3>
@@ -73,7 +76,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div>
-            <img src="/images/icon-api.svg" alt="Icon for open API." />
+            <img src="./images/icon-api.svg" alt="Icon for open API." />
             <h3>Open API</h3>
             <p>
               Manage your savings, investments, pension, and much more from one
@@ -91,7 +94,7 @@ const Home: React.FC = () => {
         '
         <div className={styles["third-row-lower"]}>
           <div>
-            <img src="/images/image-currency.jpg" alt="A picture of money." />
+            <img src="./images/image-currency.jpg" alt="A picture of money." />
             <div className={styles["article-text-div"]}>
               <p className={styles["author-text"]}>By Claire Robinson</p>
               <h3>Receive money in any currency with no fees</h3>
@@ -103,7 +106,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <img
-              src="/images/image-restaurant.jpg"
+              src="./images/image-restaurant.jpg"
               alt="A picture of a table with food."
             />
             <div className={styles["article-text-div"]}>
@@ -117,7 +120,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <img
-              src="/images/image-plane.jpg"
+              src="./images/image-plane.jpg"
               alt="A picture of an airplane wing."
             />
             <div className={styles["article-text-div"]}>
@@ -131,7 +134,7 @@ const Home: React.FC = () => {
           </div>
           <div>
             <img
-              src="/images/image-confetti.jpg"
+              src="./images/image-confetti.jpg"
               alt="A picture of confetti flying in the air."
             />
             <div className={styles["article-text-div"]}>

@@ -41,9 +41,9 @@ const MobileNavigation: React.FC = () => {
         className={styles["menu-btn"]}
       >
         {!navigationOpen ? (
-          <img src="/images/icon-hamburger.svg" alt="Hamburger menu" />
+          <img src="./images/icon-hamburger.svg" alt="Hamburger menu" />
         ) : (
-          <img src="/images/icon-close.svg" alt="Close hamburger menu" />
+          <img src="./images/icon-close.svg" alt="Close hamburger menu" />
         )}
       </button>
       {navigationOpen && (
