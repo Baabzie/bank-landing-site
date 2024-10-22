@@ -10,7 +10,10 @@ const Header: React.FC = () => {
   return (
     <header className={styles["header"]}>
       <Link href={`/home`}>
-        <img src="/images/logo.svg" alt="Easybanks logo" />
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo.svg`}
+          alt="Easybanks logo"
+        />
       </Link>
       <div className={styles["display-desktop-div"]}>
         <Navigation />
