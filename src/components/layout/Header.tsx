@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
@@ -10,9 +11,11 @@ const Header: React.FC = () => {
   return (
     <header className={styles["header"]}>
       <Link href={`/home`}>
-        <img
+        <Image
           src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo.svg`}
           alt="Easybanks logo"
+          width={500}
+          height={500}
         />
       </Link>
       <div className={styles["display-desktop-div"]}>
