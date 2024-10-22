@@ -6,6 +6,8 @@ const nextConfig = {
   basePath: isProd ? "/bank-landing-site" : "",
   assetPrefix: isProd ? "/bank-landing-site/" : "",
   reactStrictMode: true,
+  output: "export",
+  distDir: "out",
 };
 
 export default nextConfig;
