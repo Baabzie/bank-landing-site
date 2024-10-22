@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header className={styles["header"]}>
       <Link href={`/home`}>
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo.svg`}
+          src={`/images/logo.svg`}
           alt="Easybanks logo"
           width={500}
           height={500}
